@@ -1,0 +1,53 @@
+.button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  background: #25d366;
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+
+  transition: bottom 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+.icon{
+  font-size: 24px;
+}
+
+
+/* Cuando toca footer */
+.up {
+  bottom: 120px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .button span {
+    display: none;
+  }
+
+  .button {
+    width: 55px;
+    height: 55px;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.6rem;
+  }
+}

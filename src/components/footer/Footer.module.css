@@ -1,0 +1,76 @@
+.footer {
+  background: linear-gradient(90deg, #7a0f0f, #9b1c1c);
+  color: white;
+  padding: 1rem 0;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* BRAND */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand img {
+  height: 40px;
+}
+
+.brand p {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+/* CENTER TEXT */
+
+.center {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* LINKS */
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.links a:hover {
+  opacity: 1;
+}
+
+/* ================= */
+/* RESPONSIVE */
+/* ================= */
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brand {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,51 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modalButton{
+  color: var(--red);
+}
+
+.modal {
+  background: white;
+  max-width: 600px;
+  width: 90%;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modalHeader h3 {
+  margin: 0;
+  color: var(--red);
+  font-weight: 600;
+}
+
+.modalHeader button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.content {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-height: 60vh;
+  overflow-y: auto;
+  color: var(--red);
+}
+

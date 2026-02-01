@@ -1,0 +1,110 @@
+.services {
+  background-color: #f7f7f7;
+  padding: 8rem 1.5rem 1.5rem;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TITLE */
+
+.container h2 {
+  color: var(--red);
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* CARD */
+
+.card {
+  background-color: var(--white2);
+  padding: 2rem 1.8rem;
+  border-radius: 6px;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.15);
+}
+
+/* ICON */
+
+.icon {
+  color: var(--red);
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+/* TITLE CARD */
+
+.card h3 {
+  color: var(--red);
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+}
+
+/* LINE */
+
+.line {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: var(--red);
+  margin-bottom: 0.8rem;
+}
+
+/* TEXT */
+
+.card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* ================= */
+/* RESPONSIVE */
+/* ================= */
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services{
+    padding-top: 1rem;
+  }
+  .container h2 {
+  color: var(--red);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    text-align: center;
+  }
+
+  .line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
